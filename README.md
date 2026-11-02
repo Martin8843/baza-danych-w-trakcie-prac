@@ -4,13 +4,11 @@
 ![SQL](https://img.shields.io/badge/SQL-2E7D32?style=flat-square&logo=postgresql&logoColor=white)
 ![PL/SQL](https://img.shields.io/badge/PL%2FSQL-0F7843?style=flat-square&logo=oracle&logoColor=white)
 ![Oracle Data Modeler](https://img.shields.io/badge/Data_Modeler-1B5E20?style=flat-square&logo=oracle&logoColor=white)
+
 <br>
 *Autorski projekt relacyjnej bazy danych apteki, obejmujący pełne modelowanie ERD do normalizacji tabel 3NF, skrypty DDL/DML oraz logikę napisaną w PL/SQL* <br>
 *Stworzony z myślą o dalszej rozbudowie*
-
 <br>
-<br>
-
 ---
 
 <br>
@@ -45,10 +43,12 @@ Do uruchomienia oraz analizy projektu wymagany jest silnik bazy danych **Oracle 
 W projekcie wykorzystano:
 
 &emsp;## 1. Środowisko Uruchomieniowe (Engine)
+
 * **Oracle Database 21c Express Edition** (Release 21.0.0.0.0 - Production) – główny silnik bazodanowy.
 * **Docker Desktop (WSL2 na Windows 11)** – użyty do konteneryzacji silnika bazy danych. *Użycie Dockera nie jest obligatoryjne (serwer można zainstalować bezpośrednio na systemie operacyjnym), jednak kontener izoluje środowisko i znacznie ułatwia proces wdrażania.*
 
 &emsp;## 2. Narzędzia Klienta & Projektowe (GUI)
+
 * **Oracle SQL Developer** – do nawiązywania połączeń z bazą, wykonywania skryptów DDL/DML oraz tworzenia i debugowania obiektów PL/SQL (procedury, funkcje, wyzwalacze).
 * **Oracle SQL Developer Data Modeler** – do projektowania schematów oraz edycji plików źródłowych diagramu ERD.
 
