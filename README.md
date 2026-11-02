@@ -62,7 +62,7 @@
 
 <div id="4-Projektowanie"></div>
 <details>
-<summary><b> 4. Projektowanie modelu relacyjnego. </b></summary>
+<summary><b> 4. Projektowanie modelu relacyjnego </b></summary>
 <br>
 
   <details>
