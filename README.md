@@ -42,6 +42,7 @@ Głównym celem projektu było zaprojektowanie i wdrożenie relacyjnej bazy dany
 Do uruchomienia oraz analizy projektu wymagany jest silnik bazy danych Oracle Database (zalecana wersja 18c / 21c lub starsza, np. 11g) oraz narzędzia do zarządzania obiektami bazy.
 <br>
 W projekcie wykorzystano:
+<br>
 
 &emsp; 1. Środowisko Uruchomieniowe (Engine)
 
