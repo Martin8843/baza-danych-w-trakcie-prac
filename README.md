@@ -21,8 +21,6 @@
 <details>
 <summary><b>1. Cel projektu</i></summary>
 <br>
-<br>
-<br>
 
 <p>
 Głównym celem projektu było zaprojektowanie i wdrożenie relacyjnej bazy danych dla apteki. W ramach architektury kluczowa logika biznesowa została przeniesiona bezpośrednio do warstwy bazy danych Oracle, co pozwoliło rozwiązać następujące wyzwania:
