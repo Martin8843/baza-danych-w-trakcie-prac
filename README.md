@@ -85,7 +85,7 @@
 
 <div id="5-Implementacja logiki biznesowej"></div>
 <details>
-<summary><b> 5. Implementacja logiki biznesowej </b> <i></i></summary>
+<summary><b> 5. Implementacja logiki biznesowej w warstwie bazy danych</b> <i></i></summary>
 <br>
 
 <br>
