@@ -41,14 +41,14 @@ Głównym celem projektu było zaprojektowanie i wdrożenie relacyjnej bazy dany
 <summary><b> 2. Wymagania wstępne</b> <i></i></summary>
 <br>
 Do uruchomienia oraz analizy projektu wymagany jest silnik bazy danych **Oracle Database** (zalecana wersja 18c / 21c lub starsza, np. 11g) oraz narzędzia do zarządzania obiektami bazy.
-
+<br>
 W projekcie wykorzystano:
 
-### 1. Środowisko Uruchomieniowe (Engine)
+&emsp;## 1. Środowisko Uruchomieniowe (Engine)
 * **Oracle Database 21c Express Edition** (Release 21.0.0.0.0 - Production) – główny silnik bazodanowy.
 * **Docker Desktop (WSL2 na Windows 11)** – użyty do konteneryzacji silnika bazy danych. *Użycie Dockera nie jest obligatoryjne (serwer można zainstalować bezpośrednio na systemie operacyjnym), jednak kontener izoluje środowisko i znacznie ułatwia proces wdrażania.*
 
-### 2. Narzędzia Klienta & Projektowe (GUI)
+&emsp;## 2. Narzędzia Klienta & Projektowe (GUI)
 * **Oracle SQL Developer** – do nawiązywania połączeń z bazą, wykonywania skryptów DDL/DML oraz tworzenia i debugowania obiektów PL/SQL (procedury, funkcje, wyzwalacze).
 * **Oracle SQL Developer Data Modeler** – do projektowania schematów oraz edycji plików źródłowych diagramu ERD.
 
