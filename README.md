@@ -15,6 +15,7 @@
 ---
 <br>
 <br>
+
 ### 📚 Spis treści
 <div id="1-Cel projektu"></div>
 <details>
