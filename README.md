@@ -11,14 +11,15 @@
 
 ---
 
-
+<br>
+<br>
 
 
 
 ### 📚 Spis treści
-<div id="1-wstęp"></div>
+<div id="1-Cel projektu"></div>
 <details>
-<summary><b>1. Problem biznesowy i postawione pytania </b> <i>(kliknij, aby rozwinąć)</i></summary>
+<summary><b>1. Cel projektu</i></summary>
 
 <br>
 
@@ -31,10 +32,10 @@
 
 </details>
 
-<div id="2-dane"></div>
+<div id="2-Wymagania wstępne i narzędzia"></div>
 <details>
   
-<summary><b> 2. Dane do raportu</b> <i></i></summary>
+<summary><b> 2. Wymagania wstępne</b> <i></i></summary>
 
 <br>
 
@@ -46,9 +47,9 @@
 
 </details>
 
-<div id="3-model-danych"></div>
+<div id="3-Konfiguracja połączenia z bazą"></div>
 <details>
-<summary><b> 3. Model danych </b> <i></i></summary>
+<summary><b> 3. Konfiguracja połączenia z bazą </b> <i></i></summary>
 
 <br>
 
@@ -59,15 +60,26 @@
 <br>
 </details>
 
-<div id="4-projekt-ui-ux-figma"></div>
+<div id="4-Projektowanie"></div>
 <details>
-<summary><b> 4. Projekt widoków w Figma  </b> <i></i></summary>
+<summary><b> 4. Projektowanie bazy danych (modele) </b></summary>
 <br>
 
-Z
-<br>
-<br>
-<br>
+  <details>
+  <summary><b>1. Koncepcja</b></summary>
+  <p>Tutaj wpisz lub przenieś treść dotyczącą modelu koncepcyjnego...</p>
+  </details>
+
+  <details>
+  <summary><b>2. Model logiczny</b></summary>
+  <p>Tutaj wpisz lub przenieś treść dotyczącą modelu logicznego...</p>
+  </details>
+
+  <details>
+  <summary><b>3. Model fizyczny</b></summary>
+  <p>Tutaj wpisz lub przenieś treść dotyczącą modelu fizycznego...</p>
+  </details>
+
 <br>
 </details>
 
