@@ -88,7 +88,6 @@
 <summary><b> 5. Implementacja logiki biznesowej </b> <i></i></summary>
 <br>
 
-A
 <br>
 <br>
 <br>
@@ -113,7 +112,6 @@ A
 <summary><b> 7. Rozwiązania biznesowe</b></summary>
 
 <br>
-
 
 
 
