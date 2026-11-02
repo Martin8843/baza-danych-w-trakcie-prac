@@ -4,6 +4,12 @@
 ![SQL](https://img.shields.io/badge/SQL-2E7D32?style=flat-square&logo=postgresql&logoColor=white)
 ![PL/SQL](https://img.shields.io/badge/PL%2FSQL-0F7843?style=flat-square&logo=oracle&logoColor=white)
 ![Oracle Data Modeler](https://img.shields.io/badge/Data_Modeler-1B5E20?style=flat-square&logo=oracle&logoColor=white)
+<br>
+<br>
+<br>
+<br>
+
+---
 
 
 
@@ -106,9 +112,6 @@ A
 <br>
 
 
-    </td
-  </tr>
-</table>
 </details>
 
 </details>
