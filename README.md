@@ -32,7 +32,7 @@
 
 </details>
 
-<div id="2-Wymagania wstępne i narzędzia"></div>
+<div id="2-Wymagania wstepne i narzedzia"></div>
 <details>
   
 <summary><b> 2. Wymagania wstępne</b> <i></i></summary>
@@ -47,7 +47,7 @@
 
 </details>
 
-<div id="3-Konfiguracja połączenia z bazą"></div>
+<div id="3-Konfiguracja połaczenia z serwerem"></div>
 <details>
 <summary><b> 3. Konfiguracja połączenia z bazą </b> <i></i></summary>
 
@@ -62,7 +62,7 @@
 
 <div id="4-Projektowanie"></div>
 <details>
-<summary><b> 4. Projektowanie bazy danych (modele) </b></summary>
+<summary><b> 4. Projektowanie modelu relacyjnego. </b></summary>
 <br>
 
   <details>
@@ -83,9 +83,9 @@
 <br>
 </details>
 
-<div id="5-Logika i dax"></div>
+<div id="5-Implementacja logiki biznesowej"></div>
 <details>
-<summary><b> 5. Logika biznesowa sklepu i kluczowe miary DAX  </b> <i></i></summary>
+<summary><b> 5. Implementacja logiki biznesowej </b> <i></i></summary>
 <br>
 
 A
@@ -95,9 +95,9 @@ A
 <br>
 </details>
 
-<div id="6-prezentacja-wynikow"></div>
+<div id="6-programy"></div>
 <details>
-<summary><font color="#4dabf7"><b> 6. Data Storytelling & Wizualizacje (Przykłady)</b></font></summary>
+<summary><font color="#4dabf7"><b> 6. Funkcje, procedury, wyzwalacze</b></font></summary>
   
 <br>
 
@@ -108,22 +108,13 @@ A
 <br>
 </details>
 
-<div id="7-interaktywnosc-raportu"></div>
+<div id="7-rozwiazania"></div>
 <details>
-<summary><b> 7. Doświadczenia użytkowania (Rozbudowany Panel Filtrów i Nawigacja)</b></summary>
+<summary><b> 7. Rozwiązania biznesowe</b></summary>
 
 <br>
 
 
-</details>
 
-<div id="8-wnioski-biznesowe"></div>
-<details>
-<summary><b> 8. Wnioski Biznesowe / Odpowiedzi dla Biznesu </b></summary>
-
-<br>
-
-
-</details>
 
 </details>
