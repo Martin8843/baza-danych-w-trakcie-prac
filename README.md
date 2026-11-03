@@ -121,11 +121,10 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 <summary><b> 4. Projektowanie w 3 krokach modelu bazy danych </b></summary>
 <br>
 
-<blockquote>
   
-  <details>
-  &emsp; <summary><b>1. Założenia biznesowe </b></summary>
-  <p>
+&nbsp;&nbsp;&nbsp;&nbsp;  <details>
+&nbsp;&nbsp;&nbsp;&nbsp;  &emsp; <summary><b>1. Założenia biznesowe </b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;  <p>
     
 W ujęciu biznesowym system bazy danych apteki odwzorowuje standardowy proces e-commerce.
 W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
@@ -136,7 +135,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 * **`zamowienia` oraz `szczegoly_zamowien`** – Klient składa zamówienia; każde zamówienie składa się z jednej lub wielu pozycji (produktów w określonych ilościach i cenach).
 * **`platnosci`** – Każde zamówienie powiązane jest z transakcją odnotowującą status i metodę płatności.
 * 
-  </details>
+ &nbsp;&nbsp;&nbsp;&nbsp; </details>
 
   <details>
   &emsp;  <summary><b>2. Model logiczny (diagram ERD, normalizacja do Trzeciej Postaci Normalnej) </b></summary>
