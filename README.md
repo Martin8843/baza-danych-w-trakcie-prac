@@ -121,6 +121,8 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 <summary><b> 4. Projektowanie w 3 krokach modelu bazy danych </b></summary>
 <br>
 
+<blockquote>
+  
   <details>
   &emsp; <summary><b>1. Założenia biznesowe </b></summary>
   <p>
@@ -197,7 +199,9 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   &emsp; <summary><b>3. Model fizyczny</b></summary>
   <p>Tutaj wpisz lub przenieś treść dotyczącą modelu fizycznego...</p>
   </details>
-
+  
+<blockquote>
+  
 <br>
 </details>
 
