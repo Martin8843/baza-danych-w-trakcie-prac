@@ -91,7 +91,7 @@ ALTER USER apteka QUOTA UNLIMITED ON USERS;
 2. Poniższy zrzut przedstawia poprawne ustawienia połączenia z kontenerem PDB w SQL Developerze:
 
 <p align="center">
-  <img src="konfiguracja_klient.png" alt="Diagram ERD" width="650">
+  <img src="/dokumentacja/konfiguracja_klient.png" alt="Diagram ERD" width="650">
 </p>
 
 3. Uruchomienie skryptu DDL (Utworzenie struktur bazy)
@@ -156,7 +156,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   Diagram ERD utworzony w narzędziu SQL Data Modeler.
 
   <p align="center">
-  <img src="diagram_erd.png" alt="Diagram ERD" width="650">
+  <img src="/dokumentacja/diagram_erd.png" alt="Diagram ERD" width="650">
   </p>
 
   ### Normalizacja schematu (3NF)
