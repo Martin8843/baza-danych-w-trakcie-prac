@@ -65,12 +65,12 @@ W projekcie wykorzystano:
 
 <div id="3-Konfiguracja połaczenia z serwerem"></div>
 <details>
-<summary><b> 3. Instrukcja - połączenie z kontenerem pdb i uruchomienie użytkownika </b> <i></i></summary>
+<summary><b> 3. Instrukcja - połączenie z kontenerem pdb i uruchomienie skryptu </b> <i></i></summary>
 
 <br>
 ## Konfiguracja bazy danych i uprawnień
 
-Przed uruchomieniem skryptu DDL należy utworzyć dedykowanego użytkownika (schemat) w bazie Oracle oraz nadać mu odpowiednie uprawnienia. <br>
+1. Przed uruchomieniem skryptu DDL należy utworzyć dedykowanego użytkownika (schemat) w bazie Oracle oraz nadać mu odpowiednie uprawnienia. <br>
 Wykonaj poniższe polecenia jako administrator (np. jako użytkownik `SYS` lub `SYSTEM` w kontenerze `XEPDB1`):
 
 ```sql
@@ -85,10 +85,23 @@ GRANT CREATE PROCEDURE TO apteka;
 
 -- 4. Przyznanie nielimitowanego miejsca na przestrzeni tabel (tablespace) USERS
 ALTER USER apteka QUOTA UNLIMITED ON USERS;
+```
 
-
+2. Poniższy zrzut przedstawia poprawne ustawienia połączenia z kontenerem PDB w SQL Developerze:
 
 ![Konfiguracja połączenia](docs/sql_developer_connection.png)
+
+3. Uruchomienie skryptu DDL (Utworzenie struktur bazy)
+<br>
+Po pomyślnym skonfigurowaniu połączenia z bazą w SQL Developerze (`apteka_pdb`), należy wykonać skrypt tworzący tabele, relacje oraz ograniczenia biznesowe.
+
+<br>
+
+Otwórz nowe okno SQL Worksheet dla połączenia apteka_pdb w SQL Developerze, wklej tam zawartość pliku ze skryptem DDL i uruchom go za pomocą skrótu F5.
+Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
+
+
+
 
 
 <br>
