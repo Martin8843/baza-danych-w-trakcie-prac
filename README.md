@@ -197,8 +197,9 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   &emsp; <summary><b>3. Model fizyczny</b></summary>
   <p>Tutaj wpisz lub przenieś treść dotyczącą modelu fizycznego...</p>
   </details>
-  
-<blockquote>
+  <br>
+<br><br>
+<br>
 
 </details>
 
