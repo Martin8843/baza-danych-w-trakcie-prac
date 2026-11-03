@@ -124,7 +124,7 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
   </details>
 
   <details>
-  <summary><b>2. Model logiczny</b></summary>
+  <summary><b>2. Model logiczny (diagram ERD, normalizacja do Trzeciej Postaci Normalnej) </b></summary>
   <p>
   Projekt opiera się na relacyjnym modelu bazy danych, w którym kluczową rolę odgrywa tabela łącznikowa `szczegoly_zamowien`, rozwiązująca relację wiele do wielu (M:N) <br>
   pomiędzy zamówieniami a produktami.
@@ -137,8 +137,39 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
   * **`zamowienia` (1) ──do──> (N) `szczegoly_zamowien`** – zamówienie składa się z wielu pozycji.
   * **`produkty` (1) ──do──> (N) `szczegoly_zamowien`** – produkt może występować w wielu pozycjach różnych zamówie.
   * **`zamowienia` (1) ──do──> (1) `platnosci`** – każdemu zamówieniu odpowiada jedna płatność.
-  
+  * **`logi_systemowe` (N) ──do──> (1) (`uzytkownicy`, `produkty`, `zamowienia`)** – tabela audytowa rejestrująca zdarzenia w systemie. <br>
+  Posiada luźne powiązania typu wiele do jednego (opcjonalne, z regułą `SET NULL` przy usuwaniu obiektu nadrzędnego), dzięki czemu historia logów pozostaje nienaruszona.
+    
+  Diagram ERD utworzony w narzędziu SQL Data Modeler.
 
+  ![Konfiguracja połączenia](docs/sql_developer_connection.png)
+
+  ### Normalizacja schematu (3NF)
+
+  Zaprojektowany schemat bazy danych spełnia zasady **Trzeciej Postaci Normalnej (3NF)**
+  <br>
+ #### Jak znormalizowano kluczowe tabele?
+
+  * **1. Rozdzielenie użytkowników od adresów (`uzytkownicy` ──> `adresy`)**
+  Dane adresowe wyciągnięto do osobnej tabeli, co zapobiega dublowaniu lokalizacji i pozwala jednemu użytkownikowi posiadać wiele adresów (relacja 1:N) <br>
+  bez powielania danych osobowych.
+
+  * **2. Katalogowanie produktów (`kategorie_produktow` ──> `produkty`)**
+  Nazwa i opis kategorii zależą wyłącznie od klucza kategorii (`kategoria_id`), a nie od konkretnego leku.<br>
+  Dzięki wydzieleniu słownika opis kategorii nie powtarza się przy każdym produkcie.
+
+  * **3. Historia cen transakcyjnych (`szczegoly_zamowien`)**
+  Tabela łącznikowa przechowuje własną `cena_jednostkowa` oraz `ilosc` z momentu zakupu.<br>
+  Odcina to zależność od dynamicznej ceny w tabeli `produkty` – cena na zamówieniu jest atrybutem            historycznym konkretnej transakcji.
+
+  * **4. Izolacja stanu magazynowego (`stan_magazynu` ──> `produkty`)**
+  Dane katalogowe leku (opis, nazwa) zmieniają się rzadko, podczas gdy stan magazynowy (liczba sztuk) ulega stałym zmianom przy sprzedaży.<br>
+  Wydzielenie tej relacji odciąża główny słownik produktów i rozdziela dane statyczne od operacyjnych.
+     
+     
+     
+     
+  
 
     
   </p>
