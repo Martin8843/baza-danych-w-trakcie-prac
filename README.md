@@ -68,6 +68,7 @@ W projekcie wykorzystano:
 <summary><b> 3. Instrukcja - połączenie z kontenerem pdb i uruchomienie skryptu </b> <i></i></summary>
 
 <br>
+
 ### Konfiguracja bazy danych i uprawnień
 
 1. Przed uruchomieniem skryptu DDL należy utworzyć dedykowanego użytkownika (schemat) w bazie Oracle oraz nadać mu odpowiednie uprawnienia. <br>
