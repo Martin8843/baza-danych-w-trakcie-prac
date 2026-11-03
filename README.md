@@ -93,6 +93,7 @@ ALTER USER apteka QUOTA UNLIMITED ON USERS;
 <p align="center">
   <img src="konfiguracja_klient.png" alt="Diagram ERD" width="650">
 </p>
+
 3. Uruchomienie skryptu DDL (Utworzenie struktur bazy)
    
 <br>
