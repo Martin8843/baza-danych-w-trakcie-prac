@@ -116,7 +116,7 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
 <div id="4-Projektowanie"></div>
 <details>
-<summary><b> 4. Projektowanie 3 krokach modelu bazy danych </b></summary>
+<summary><b> 4. Projektowanie w 3 krokach modelu bazy danych </b></summary>
 <br>
 
   <details>
