@@ -116,12 +116,22 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
 <div id="4-Projektowanie"></div>
 <details>
-<summary><b> 4. Projektowanie modelu relacyjnego </b></summary>
+<summary><b> 4. Projektowanie 3 krokach modelu bazy danych </b></summary>
 <br>
 
   <details>
-  <summary><b>1. Koncepcja</b></summary>
-  <p>Tutaj wpisz lub przenieś treść dotyczącą modelu koncepcyjnego...</p>
+  <summary><b>1. Założenia biznesowe </b></summary>
+  <p>
+    
+W ujęciu biznesowym system bazy danych apteki odwzorowuje standardowy proces e-commerce.
+W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
+
+* **`uzytkownicy` i `adresy`** – Klient rejestruje się w systemie i może zarządzać wieloma adresami dostawy.
+* **`kategorie_produktow` i `produkty`** – Asortyment apteki jest podzielony na kategorie, a każdy produkt należy do jednej z nich.
+* **`stan_magazynu`** – Reprezentuje bieżącą dostępność ilościową poszczególnych produktów.
+* **`zamowienia` oraz `szczegoly_zamowien`** – Klient składa zamówienia; każde zamówienie składa się z jednej lub wielu pozycji (produktów w określonych ilościach i cenach).
+* **`platnosci`** – Każde zamówienie powiązane jest z transakcją odnotowującą status i metodę płatności.
+* 
   </details>
 
   <details>
