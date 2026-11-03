@@ -146,7 +146,7 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
   ### Normalizacja schematu (3NF)
   <br>
-  Zaprojektowany schemat bazy danych spełnia zasady **Trzeciej Postaci Normalnej (3NF)**
+  Zaprojektowany schemat bazy danych spełnia zasady Trzeciej Postaci Normalnej (3NF)
   <br>
  #### Jak znormalizowano kluczowe tabele?
 
