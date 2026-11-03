@@ -122,9 +122,9 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 <br>
 
   
-&nbsp;&nbsp;&nbsp;&nbsp;  <details>
-&nbsp;&nbsp;&nbsp;&nbsp;  &emsp; <summary><b>1. Założenia biznesowe </b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;  <p>
+&nbsp;&nbsp;&nbsp;&nbsp;<details>
+&nbsp;&nbsp;&nbsp;&nbsp;<summary><b>1. Założenia biznesowe </b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;<p>
     
 W ujęciu biznesowym system bazy danych apteki odwzorowuje standardowy proces e-commerce.
 W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
