@@ -198,7 +198,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   
   Kod źródłowy znajduje się w katalogu `skrypy_sql/apteka_schemat.ddl`
 
-  👉 [Kliknij tutaj, aby przejrzeć pełny kod DDL](/skrypy_sql/apteka_schemat.ddl)
+  👉 [Kliknij tutaj, aby przejrzeć pełny kod DDL](./skrypy_sql/apteka_schemat.ddl)
   
   <br>
 
