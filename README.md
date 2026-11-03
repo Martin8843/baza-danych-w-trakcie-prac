@@ -122,7 +122,7 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 <br>
 
   <details>
-  <summary><b>1. Założenia biznesowe </b></summary>
+  &emsp; <summary><b>1. Założenia biznesowe </b></summary>
   <p>
     
 W ujęciu biznesowym system bazy danych apteki odwzorowuje standardowy proces e-commerce.
@@ -137,7 +137,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   </details>
 
   <details>
-  <summary><b>2. Model logiczny (diagram ERD, normalizacja do Trzeciej Postaci Normalnej) </b></summary>
+  &emsp;  <summary><b>2. Model logiczny (diagram ERD, normalizacja do Trzeciej Postaci Normalnej) </b></summary>
   <p>
   Projekt opiera się na relacyjnym modelu bazy danych, w którym kluczową rolę odgrywa tabela łącznikowa `szczegoly_zamowien`, rozwiązująca relację wiele do wielu (M:N) <br>
   pomiędzy zamówieniami a produktami.
@@ -194,7 +194,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   </details>
 
   <details>
-  <summary><b>3. Model fizyczny</b></summary>
+  &emsp; <summary><b>3. Model fizyczny</b></summary>
   <p>Tutaj wpisz lub przenieś treść dotyczącą modelu fizycznego...</p>
   </details>
 
