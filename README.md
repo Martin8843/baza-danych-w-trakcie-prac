@@ -125,7 +125,23 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
   <details>
   <summary><b>2. Model logiczny</b></summary>
-  <p>Tutaj wpisz lub przenieś treść dotyczącą modelu logicznego...</p>
+  <p>
+  Projekt opiera się na relacyjnym modelu bazy danych, w którym kluczową rolę odgrywa tabela łącznikowa `szczegoly_zamowien`, rozwiązująca relację wiele do wielu (M:N) <br>
+  pomiędzy zamówieniami a produktami.
+   
+  ### Kardynalność i relacje:
+  * **`uzytkownicy` (1) ──do──> (N) `adresy`** – jeden użytkownik może posiadać wiele adresów (relacja 1:N z kaskadowym usuwaniem).
+  * **`kategorie_produktow` (1) ──do──> (N) `produkty`** – w jednej kategorii znajduje się wiele produktów.
+  * **`produkty` (1) ──do──> (1) `stan_magazynu`** – każdy produkt ma dokładnie jeden wpis określający jego stan magazynowy.
+  * **`uzytkownicy` (1) ──do──> (N) `zamowienia`** – użytkownik może składać wiele zamówień.
+  * **`zamowienia` (1) ──do──> (N) `szczegoly_zamowien`** – zamówienie składa się z wielu pozycji.
+  * **`produkty` (1) ──do──> (N) `szczegoly_zamowien`** – produkt może występować w wielu pozycjach różnych zamówie.
+  * **`zamowienia` (1) ──do──> (1) `platnosci`** – każdemu zamówieniu odpowiada jedna płatność.
+  
+
+
+    
+  </p>
   </details>
 
   <details>
