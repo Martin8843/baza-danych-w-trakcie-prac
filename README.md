@@ -65,9 +65,30 @@ W projekcie wykorzystano:
 
 <div id="3-Konfiguracja połaczenia z serwerem"></div>
 <details>
-<summary><b> 3. Konfiguracja połączenia z bazą </b> <i></i></summary>
+<summary><b> 3. Instrukcja - połączenie z kontenerem pdb i uruchomienie użytkownika </b> <i></i></summary>
 
 <br>
+## Konfiguracja bazy danych i uprawnień
+
+Przed uruchomieniem skryptu DDL należy utworzyć dedykowanego użytkownika (schemat) w bazie Oracle oraz nadać mu odpowiednie uprawnienia. <br>
+Wykonaj poniższe polecenia jako administrator (np. jako użytkownik `SYS` lub `SYSTEM` w kontenerze `XEPDB1`):
+
+```sql
+-- 1. Utworzenie użytkownika bazy danych
+CREATE USER apteka IDENTIFIED BY Haslo1234;
+
+-- 2. Nadanie podstawowych ról do połączenia i tworzenia obiektów
+GRANT CONNECT, RESOURCE TO apteka;
+
+-- 3. Nadanie uprawnień do tworzenia procedur i funkcji PL/SQL
+GRANT CREATE PROCEDURE TO apteka;
+
+-- 4. Przyznanie nielimitowanego miejsca na przestrzeni tabel (tablespace) USERS
+ALTER USER apteka QUOTA UNLIMITED ON USERS;
+
+
+
+![Konfiguracja połączenia](docs/sql_developer_connection.png)
 
 
 <br>
