@@ -71,7 +71,7 @@ W projekcie wykorzystano:
 
 ### Konfiguracja bazy danych i uprawnień
 
-1. Przed uruchomieniem skryptu DDL należy utworzyć dedykowanego użytkownika (schemat) w bazie Oracle oraz nadać mu odpowiednie uprawnienia. <br>
+&emsp; 1. Przed uruchomieniem skryptu DDL należy utworzyć dedykowanego użytkownika (schemat) w bazie Oracle oraz nadać mu odpowiednie uprawnienia. <br>
 Wykonaj poniższe polecenia jako administrator (np. jako użytkownik `SYS` lub `SYSTEM` w kontenerze `XEPDB1`):
 
 ```sql
@@ -88,13 +88,13 @@ GRANT CREATE PROCEDURE TO apteka;
 ALTER USER apteka QUOTA UNLIMITED ON USERS;
 ```
 
-2. Poniższy zrzut przedstawia poprawne ustawienia połączenia z kontenerem PDB w SQL Developerze:
+&emsp; 2. Poniższy zrzut przedstawia poprawne ustawienia połączenia z kontenerem PDB w SQL Developerze:
 
 <p align="center">
   <img src="/dokumentacja/konfiguracja_klient.png" alt="Diagram ERD" width="650">
 </p>
 
-3. Uruchomienie skryptu DDL (Utworzenie struktur bazy)
+&emsp; 3. Uruchomienie skryptu DDL (Utworzenie struktur bazy)
    
 <br>
 
