@@ -152,8 +152,7 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
   * **1. Rozdzielenie użytkowników od adresów (`uzytkownicy` ──> `adresy`)**
 
-  Dane adresowe wyciągnięto do osobnej tabeli, co zapobiega dublowaniu lokalizacji i pozwala jednemu użytkownikowi posiadać wiele adresów (relacja 1:N) <br>
-  bez powielania danych osobowych.
+  Dane adresowe wyciągnięto do osobnej tabeli, co zapobiega dublowaniu lokalizacji i pozwala jednemu użytkownikowi posiadać wiele adresów (relacja 1:N) bez powielania danych osobowych.
 
   * **2. Katalogowanie produktów (`kategorie_produktow` ──> `produkty`)**
     
