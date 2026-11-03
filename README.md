@@ -195,7 +195,8 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 
   <details>
   <summary><b>3. Model fizyczny</b></summary>
-  <p> Kod źródłowy znajduje się w katalogu `skrypy_sql/apteka_schemat.ddl`</p>
+  
+  Kod źródłowy znajduje się w katalogu `skrypy_sql/apteka_schemat.ddl`
 
   Przykładowy DDL
   
