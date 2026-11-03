@@ -121,10 +121,9 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 <summary><b> 4. Projektowanie w 3 krokach modelu bazy danych </b></summary>
 <br>
 
-  
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-&nbsp;&nbsp;&nbsp;&nbsp;<summary><b>1. Założenia biznesowe </b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;<p>
+<details>
+<summary><b>1. Założenia biznesowe </b></summary>
+<p>
     
 W ujęciu biznesowym system bazy danych apteki odwzorowuje standardowy proces e-commerce.
 W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
