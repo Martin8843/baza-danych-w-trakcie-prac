@@ -201,8 +201,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   </details>
   
 <blockquote>
-  
-<br>
+
 </details>
 
 <div id="5-Implementacja logiki biznesowej"></div>
