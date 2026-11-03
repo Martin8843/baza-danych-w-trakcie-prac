@@ -100,6 +100,7 @@ Po pomyślnym skonfigurowaniu połączenia z bazą w SQL Developerze (`apteka_pd
 <br>
 
 Otwórz nowe okno SQL Worksheet dla połączenia apteka_pdb w SQL Developerze, wklej tam zawartość pliku ze skryptem DDL i uruchom go za pomocą skrótu F5.
+<br>
 Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
 
