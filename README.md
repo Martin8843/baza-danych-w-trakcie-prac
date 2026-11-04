@@ -274,8 +274,8 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
 
 **Widoki**
 
-  1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql) <br><br>
-  Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę **p_logowanie_zdarzeń**) <br>
+  1. `v_produkty_z_magazynu` [(Zobacz kod)](./skrypty_sql/v_produkty_z_magazynu.sql) <br><br>
+  Widok agregujący dane asortymentowe wraz z bieżącymi stanami magazynowymi dla poszczególnych produktów. <br>
   <br>
   <br>
   
