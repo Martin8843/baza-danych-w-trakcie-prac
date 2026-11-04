@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Diagram_ERD" id="64768D99-F1B3-29DE-AFE9-08C90A89B843" version="3.5">
+<createdBy>Laptop</createdBy>
+<createdTime>2026-11-04 20:31:12 UTC</createdTime>
+<ownerDesignName>Diagram_ERD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>64768D99-F1B3-29DE-AFE9-08C90A89B843</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C090F7E8-6D45-A516-0C85-F88FC19B8B05">
+<designStoragePath>C:\apteka_schemat</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
