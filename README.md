@@ -292,6 +292,11 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   Widok prezentuje, które leki lub produkty kończą się na półkach i wymagają ponownego zamówienia u dostawcy.
   <br>
 
+   <p align="center">
+  <img src="/dokumentacja/widok_produkty_krytyczny_stan.png" alt="Diagram ERD" width="800">
+  </p>
+
+
 **Procedury**
 
   1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql) <br><br>
