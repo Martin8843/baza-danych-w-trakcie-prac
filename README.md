@@ -252,18 +252,19 @@ ADD CONSTRAINT chk_ilosc CHECK (ilosc > 0);
 <br>
 
 ```sql
-ALTER TABLE logi_systemowe 
-    ADD CONSTRAINT fk_log_zamowienie FOREIGN KEY 
+ALTER TABLE stan_magazynu 
+    ADD CONSTRAINT fk_magazyn_produkt FOREIGN KEY 
     ( 
-     zamowienie_id
+     produkt_id
     ) 
-    REFERENCES zamowienia 
+    REFERENCES produkty 
     ( 
-     zamowienie_id
+     produkt_id
     ) 
-    ON DELETE SET NULL 
+    ON DELETE CASCADE 
     NOT DEFERRABLE 
 ;
+
 ```
 <br>
 
@@ -271,7 +272,7 @@ ALTER TABLE logi_systemowe
 
 W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
-**Widoki**
+**wIDOKI**
 
   1. `v_produkty_z_magazynu` [(Zobacz kod)](./skrypty_sql/v_produkty_z_magazynu.sql) <br><br>
   Widok agregujący dane asortymentowe wraz z bieżącymi stanami magazynowymi dla poszczególnych produktów. <br>
@@ -296,7 +297,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   </p>
 
 
-**Procedury**
+**PROCEDURY**
 
   1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql) <br><br>
   Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę **p_logowanie_zdarzeń**) <br>
@@ -330,7 +331,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   <img src="/dokumentacja/tabela_logow_brak_id.png" alt="Diagram ERD" width="650">
   </p>
   
-  **Wyzwalacze**
+  **WYZWALACZE**
 
   1. `trg_po_zmianach_produkty` [(Zobacz kod)](./skrypty_sql/trg_po_zmianach_produkty.sql) <br><br>
   To klasyczny wyzwalacz rejestrujący historie zmian (audit trail). Trigger uruchamia się po każdej operacji INSERT, UPDATE lub DELETE dla każdego zmienianego wiersza.
