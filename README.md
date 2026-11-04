@@ -281,7 +281,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
 
    2. `v_analiza_magazynowa` [(Zobacz kod)](./skrypty_sql/v_analiza_magazynowa.sql) <br><br>
   Widok łączy dane produktów z ich aktualnymi stanami magazynowymi.
-  Automatycznie oblicza całkowitą wartość finansową towaru na półkách (cena × ilość) i kontroluje daty ważności.
+  Automatycznie oblicza całkowitą wartość finansową towaru na półkach (cena × ilość) i kontroluje daty ważności.
   <br>
   
    <p align="center">
