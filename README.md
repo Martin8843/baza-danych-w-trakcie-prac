@@ -223,14 +223,14 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 <details>
 <summary><b>5. Implementacja logiki biznesowej w warstwie bazy danych (programy PL/SQL)</b></summary>
 <br>
+  
+**Dane testowe**
+Aby ułatwić testowanie mechanizmów bazy danych, przygotowałem dedykowany zestaw danych testowych.
 
+👉 [Dane testowe](./skrypty_sql/apteka_dane_testowe.sql)
 
 W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. Oto najważniejsze z nich, które zostały wdrożone na tym etapie.
 
-🛠️ Dane testowe
-Aby ułatwić testowanie mechanizmów bazy danych, przygotowałem dedykowany zestaw danych testowych.
-
-👉 [Dane testowe](./skrypty_sql/apteka_dane_testowe.ddl)
 
 
 <b>1. Więzy integralności (Constraints & CHECK)</b>
