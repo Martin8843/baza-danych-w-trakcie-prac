@@ -228,13 +228,30 @@ W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. O
 
 <b>1. Więzy integralności (Constraints & CHECK)</b>
 - <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
-- <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności referencyjnej z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
+- <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności  z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
 
 ```sql
 ALTER TABLE szczegoly_zamowien 
 ADD CONSTRAINT chk_ilosc CHECK (ilosc > 0);
+```
+<br>
 
+```sql
+ALTER TABLE logi_systemowe 
+    ADD CONSTRAINT fk_log_zamowienie FOREIGN KEY 
+    ( 
+     zamowienie_id
+    ) 
+    REFERENCES zamowienia 
+    ( 
+     zamowienie_id
+    ) 
+    ON DELETE SET NULL 
+    NOT DEFERRABLE 
+;
+```
 
+<br>
 
 ## 2. Logika proceduralna (PL/SQL)
 - **Wyzwalacze (Triggers):** Automatyczna aktualizacja stanów magazynowych (`stan_magazynu`) po złożeniu zamówienia oraz rejestracja zdarzeń w tabeli `logi_systemowe`.
