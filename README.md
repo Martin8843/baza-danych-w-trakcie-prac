@@ -222,20 +222,20 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 <div id="5-Implementacja logiki biznesowej"></div>
 <details>
 <summary><b> 5. Implementacja logiki biznesowej w warstwie bazy danych</b> <i></i></summary>
-<p>
+  
 W warstwie bazy danych zastosowano dwa poziomy ochrony. Oto najważniejsze z nich, które zostały wdrożone na tym etapie:
 
-### 1. Więzy integralności (Constraints & CHECK)
+## 1. Więzy integralności (Constraints & CHECK)
 - **Ograniczenia wartości (`CHECK`):** Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
 - **Klucze i relacje (`PRIMARY KEY`, `FOREIGN KEY`):** Gwarancja unikalności rekordów i spójności referencyjnej z regułami usuwania (np. `ON DELETE CASCADE` lub `SET NULL`).
 
   ```sql
 ALTER TABLE szczegoly_zamowien 
 ADD CONSTRAINT chk_ilosc CHECK (ilosc > 0);
+  ```
 
 
-
-### 2. Logika proceduralna (PL/SQL)
+## 2. Logika proceduralna (PL/SQL)
 - **Wyzwalacze (Triggers):** Automatyczna aktualizacja stanów magazynowych (`stan_magazynu`) po złożeniu zamówienia oraz rejestracja zdarzeń w tabeli `logi_systemowe`.
 - **Procedury i Funkcje:** Bezpieczna obsługa transakcji (składanie zamówienia z walidacją dostępności) oraz wyliczanie wartości zamówień.
 - **Widoki (Views):** Uproszczone zestawienia analityczne (np. najczęściej zamawiane produkty).
