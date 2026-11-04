@@ -237,7 +237,7 @@ W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. O
 
 
 
-<b>## 1. Więzy integralności (Constraints & CHECK)</b>
+<b> 1. Więzy integralności (Constraints & CHECK)</b>
 
 - <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
 - <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności  z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
@@ -275,12 +275,24 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql)
   <br>
   Opis: <br>
-  Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę `p_logowanie_zdarzeń`) <br>
+  Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę **p_logowanie_zdarzeń**) <br>
   <br>
   <br>
   
   2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql)
+  <br>
+  Opis: <br>
+  Samodzielnie (autonomicznie) rejestruje zdarzenia systemowe, błędy i wyjątki w dedykowanej tabeli logów, zapisując typ zdarzenia oraz szczegółowy komunikat.
+  <br>
+  <br>
+  <br>
+  3. `` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql)
+  <br>
+  Opis: <br>
   
+  <br>
+  <br>
+  <br>
 
 
 
