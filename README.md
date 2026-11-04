@@ -7,7 +7,8 @@
 ![Oracle Data Modeler](https://img.shields.io/badge/Data_Modeler-1B5E20?style=flat-square&logo=oracle&logoColor=white)
 
 <br>
-*Autorski projekt relacyjnej bazy danych apteki, obejmujący pełne modelowanie ERD do normalizacji tabel 3NF, skrypty DDL/DML oraz logikę napisaną w PL/SQL* <br>
+Autorski projekt relacyjnej bazy danych apteki, obejmujący pełne modelowanie ERD do normalizacji tabel 3NF, skrypty DDL/DML oraz logikę napisaną w PL/SQL* 
+
 *Stworzony z myślą o dalszej rozbudowie*
 <br>
 
