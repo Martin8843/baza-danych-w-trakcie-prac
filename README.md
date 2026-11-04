@@ -329,6 +329,19 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
     <p align="center">
   <img src="/dokumentacja/tabela_logow_brak_id.png" alt="Diagram ERD" width="650">
   </p>
+  
+  **Wyzwalacze**
 
+  1. `trg_po_zmianach_produkty` [(Zobacz kod)](./skrypty_sql/trg_po_zmianach_produkty.sql) <br><br>
+  To klasyczny wyzwalacz rejestrujący historie zmian (audit trail). Trigger uruchamia się po każdej operacji INSERT, UPDATE lub DELETE dla każdego zmienianego wiersza.
+  Jego zadaniem jest rozpoznanie typu operacji, pobranie odpowiedniego ID oraz przekazanie tych danych do autonomicznej procedury logującej, która zapisuje historię w tabeli `logi_systemowe`
+  <br>
+  Zapis w tabeli logów  <br>
+  <p align="center">
+  <img src="/dokumentacja/tabela_logow_dml.png" alt="Diagram ERD" width="650">
+  </p>
+  <br>
+  <br>
+  
 </details>
 
