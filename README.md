@@ -160,7 +160,8 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   <br>
   Zaprojektowany schemat bazy danych spełnia zasady Trzeciej Postaci Normalnej (3NF)
   <br>
- #### Jak znormalizowano kluczowe tabele?
+  
+ ### Jak znormalizowano kluczowe tabele?
 
   * **1. Rozdzielenie użytkowników od adresów (`uzytkownicy` ──> `adresy`)**
 
