@@ -268,7 +268,7 @@ ALTER TABLE logi_systemowe
 
 <br>2. Logika proceduralna (PL/SQL)<br>
 
-W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql znajdują się szczegółowe komentarze z opisem działania kodu*  <br>
+W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
 **Procedury**
 
@@ -283,7 +283,7 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   <br>
   
   3. `p_usun_produkt` [(Zobacz kod)](./skrypty_sql/p_usun_produkt.sql) <br><br>
-  Procedura uniemożliwia skasowanie produkt, który znajduje się na stanie magazynowym lub w historii zamówień. W razie próby naruszenia tych zasad, automatycznie blokuje operację i zapisuje      szczegółowy błąd w dzienniku logów.
+  Procedura uniemożliwia skasowanie produkt, który znajduje się na stanie magazynowym lub w historii zamówień.<br>W razie próby naruszenia tych zasad, automatycznie blokuje operację i zapisuje   szczegółowy błąd w dzienniku logów.
   <br>
     <p align="center">
   <img src="/dokumentacja/tabela_logow.png" alt="Diagram ERD" width="650">
@@ -292,12 +292,13 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   <br>
 
   4. `p_aktualizuj_ceny_produktow` [(Zobacz kod)](./skrypty_sql/p_aktualizuj_ceny_produktow.sql) <br><br>
-  To procedura służąca do masowej aktualizacji cen produktów przy użyciu kolekcji.<br>Zamiast modyfikować ceny pojedynczo w pętli, przekazuje całe tablice identyfikatorów oraz odpowiadających im    nowych cen w jednej operacji wsadowej.<br>Kluczowe znaczenie ma tutaj operator *FORALL*, który zapewnia maksymalną wydajność bazy danych.
+  To procedura służąca do masowej aktualizacji cen produktów przy użyciu kolekcji.<br>Zamiast modyfikować ceny pojedynczo w pętli, przekazuje całe tablice identyfikatorów oraz odpowiadających
+  im nowych cen w jednej operacji wsadowej.<br>Kluczowe znaczenie ma tutaj operator *FORALL*, który zapewnia maksymalną wydajność bazy danych.
   <br>
   Procedura przeprowadza walidacje:  <br>
-  Sprawdza, czy obie tablice mają dokładnie taki sam rozmiar (tyle samo ID, co nowych cen).  <br>
-  Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
-  Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale nie przerywa działania  <br>
+  -Sprawdza, czy obie tablice mają dokładnie taki sam rozmiar (tyle samo ID, co nowych cen).  <br>
+  -Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
+  -Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale nie przerywa działania  <br>
   <br>
   <br>
     <p align="center">
