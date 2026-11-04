@@ -283,9 +283,9 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   Widok łączy dane produktów z ich aktualnymi stanami magazynowymi.
   Automatycznie oblicza całkowitą wartość finansową towaru na półkách (cena × ilość) i kontroluje daty ważności.
   <br>
-  <br>
+  
    <p align="center">
-  <img src="/dokumentacja/widok_analiza_magazyn.png" alt="Diagram ERD" width="650">
+  <img src="/dokumentacja/widok_analiza_magazyn.png" alt="Diagram ERD" width="800">
   </p>
 
 **Procedury**
