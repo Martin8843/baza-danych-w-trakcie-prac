@@ -149,8 +149,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   * **`zamowienia` (1) ──do──> (N) `szczegoly_zamowien`** – zamówienie składa się z wielu pozycji.
   * **`produkty` (1) ──do──> (N) `szczegoly_zamowien`** – produkt może występować w wielu pozycjach różnych zamówie.
   * **`zamowienia` (1) ──do──> (1) `platnosci`** – każdemu zamówieniu odpowiada jedna płatność.
-  * **`logi_systemowe` (N) ──do──> (1) (`uzytkownicy`, `produkty`, `zamowienia`)** – tabela audytowa rejestrująca zdarzenia w systemie. <br>
-  Posiada luźne powiązania typu wiele do jednego (opcjonalne, z regułą `SET NULL` przy usuwaniu obiektu nadrzędnego), dzięki czemu historia logów pozostaje nienaruszona.
+  * **`logi_systemowe`** – tabela audytowa rejestrująca zdarzenia w systemie. <br>
     
   Diagram ERD utworzony w narzędziu SQL Data Modeler.
 
@@ -333,14 +332,3 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
 
 </details>
 
-
-
-<div id="7-rozwiazania"></div>
-<details>
-<summary><b> 7. Rozwiązania biznesowe</b></summary>
-
-<br>
-
-
-
-</details>
