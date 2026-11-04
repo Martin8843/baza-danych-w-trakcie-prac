@@ -297,7 +297,7 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL.<br><br>*W pliku 
   Procedura przeprowadza walidacje: 
   * Sprawdza, czy obie tablice mają dokładnie taki sam rozmiar (tyle samo ID, co nowych cen).  <br>
   * Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
-  * Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale nie przerywa działania  <br>
+  * Sprawdza w pętli, czy wszystkie podane produkty istnieją w bazie – w przypadku wykrycia brakujących ID przerywa operację, loguje błąd i zwraca czytelny komunikat.<br>
   <br>
   Obsługa wyjątków i autonomiczne logowanie błędów w procedurze masowej aktualizacji cen.
     <p align="center">
