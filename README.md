@@ -266,7 +266,7 @@ ALTER TABLE logi_systemowe
 ```
 <br>
 
-<br>2. Logika proceduralna (PL/SQL)<br>
+<b>2. Logika proceduralna (PL/SQL)</b>
 
 W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
