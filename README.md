@@ -62,7 +62,7 @@ W projekcie wykorzystano:
 
 <div id="3-Konfiguracja połaczenia z serwerem"></div>
 <details>
-<summary><b> 3. Instrukcja - połączenie z kontenerem pdb i uruchomienie skryptu </b> <i></i></summary>
+<summary><b> 3. Inicjalizacja środowiska i instalacja struktur bazodanowych </b> <i></i></summary>
 
 <br>
 
