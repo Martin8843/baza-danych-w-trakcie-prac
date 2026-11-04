@@ -83,6 +83,8 @@ GRANT CREATE PROCEDURE TO apteka;
 
 -- 4. Przyznanie nielimitowanego miejsca na przestrzeni tabel (tablespace) USERS
 ALTER USER apteka QUOTA UNLIMITED ON USERS;
+-- 5. Przyznanie uprawnień do tworzenia widoków
+GRANT CREATE VIEW TO apteka;
 ```
 
 &emsp; 2. Poniższy zrzut przedstawia poprawne ustawienia połączenia z kontenerem PDB w SQL Developerze:
