@@ -288,6 +288,10 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   <img src="/dokumentacja/widok_analiza_magazyn.png" alt="Diagram ERD" width="800">
   </p>
 
+   3. `v_produkty_krytyczny_stan` [(Zobacz kod)](./skrypty_sql/v_produkty_krytyczny_stan.sql) <br><br>
+  Widok prezentuje, które leki lub produkty kończą się na półkach i wymagają ponownego zamówienia u dostawcy.
+  <br>
+
 **Procedury**
 
   1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql) <br><br>
