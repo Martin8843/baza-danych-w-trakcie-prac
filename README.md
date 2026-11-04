@@ -278,7 +278,15 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   Widok agregujący dane asortymentowe wraz z bieżącymi stanami magazynowymi dla poszczególnych produktów. <br>
   <br>
   <br>
-  
+
+   2. `v_analiza_magazynowa` [(Zobacz kod)](./skrypty_sql/v_analiza_magazynowa.sql) <br><br>
+  Widok łączy dane produktów z ich aktualnymi stanami magazynowymi.
+  Automatycznie oblicza całkowitą wartość finansową towaru na półkách (cena × ilość) i kontroluje daty ważności.
+  <br>
+  <br>
+   <p align="center">
+  <img src="/dokumentacja/widok_analiza_magazyn.png" alt="Diagram ERD" width="650">
+  </p>
 
 **Procedury**
 
