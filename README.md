@@ -231,10 +231,8 @@ W warstwie bazy danych zastosowano dwa poziomy ochrony. Oto najważniejsze z nic
 
   ```sql
 ALTER TABLE szczegoly_zamowien 
-ADD CONSTRAINT chk_ilosc_dodatnia CHECK (ilosc > 0);
-```
+ADD CONSTRAINT chk_ilosc CHECK (ilosc > 0);
 
- 
 
 
 ### 2. Logika proceduralna (PL/SQL)
