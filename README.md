@@ -238,6 +238,7 @@ W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. O
 
 
 <b>## 1. Więzy integralności (Constraints & CHECK)</b>
+
 - <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
 - <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności  z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
 
