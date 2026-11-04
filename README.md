@@ -117,11 +117,11 @@ Plik znajduje się w repozytorium pod nazwą `apteka_schemat_ddl`.
 
 <div id="4-Projektowanie"></div>
 <details>
-<summary><b> 4. Projektowanie w 3 krokach modelu bazy danych </b></summary>
+<summary><b> 4. Projektowanie i architektura bazy danych (model logiczny) </b></summary>
 <br>
 
 <details>
-<summary><b>1. Założenia biznesowe </b></summary>
+<summary><b>4.1. Założenia biznesowe </b></summary>
 <p>
     
 W ujęciu biznesowym system bazy danych apteki odwzorowuje standardowy proces e-commerce.
@@ -136,7 +136,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
  &nbsp;&nbsp;&nbsp;&nbsp; </details>
 
   <details>
-  &emsp;  <summary><b>2. Model logiczny (diagram ERD, normalizacja do Trzeciej Postaci Normalnej) </b></summary>
+  &emsp;  <summary><b>4.2. Model logiczny (diagram ERD, normalizacja do Trzeciej Postaci Normalnej) </b></summary>
   <p>
   Projekt opiera się na relacyjnym modelu bazy danych, w którym kluczową rolę odgrywa tabela łącznikowa `szczegoly_zamowien`, rozwiązująca relację wiele do wielu (M:N) <br>
   pomiędzy zamówieniami a produktami.
@@ -194,7 +194,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   </details>
 
   <details>
-  <summary><b>3. Model fizyczny</b></summary>
+  <summary><b>4.3. Model fizyczny</b></summary>
   
   Kod źródłowy znajduje się w katalogu `skrypy_sql/apteka_schemat.ddl`
 
