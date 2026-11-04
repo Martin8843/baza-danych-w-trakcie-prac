@@ -219,20 +219,21 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 
 </details>
 
-<div id="5-Implementacja logiki biznesowej"></div>
+<div id="5-implementacja-logiki-biznesowej"></div>
 <details>
-<summary><b> 5. Implementacja logiki biznesowej w warstwie bazy danych</b> <i></i></summary>
-  
-W warstwie bazy danych zastosowano dwa poziomy ochrony. Oto najważniejsze z nich, które zostały wdrożone na tym etapie:
+<summary><b>5. Implementacja logiki biznesowej w warstwie bazy danych</b></summary>
+<br>
 
-## 1. Więzy integralności (Constraints & CHECK)
-- **Ograniczenia wartości (`CHECK`):** Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
-- **Klucze i relacje (`PRIMARY KEY`, `FOREIGN KEY`):** Gwarancja unikalności rekordów i spójności referencyjnej z regułami usuwania (np. `ON DELETE CASCADE` lub `SET NULL`).
+W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. Oto najważniejsze z nich, które zostały wdrożone na tym etapie:
 
-  ```sql
+<b>1. Więzy integralności (Constraints & CHECK)</b>
+- <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
+- <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności referencyjnej z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
+
+```sql
 ALTER TABLE szczegoly_zamowien 
 ADD CONSTRAINT chk_ilosc CHECK (ilosc > 0);
-  ```
+
 
 
 ## 2. Logika proceduralna (PL/SQL)
@@ -243,6 +244,7 @@ ADD CONSTRAINT chk_ilosc CHECK (ilosc > 0);
 👉 [Kliknij tutaj, aby przejrzeć kod logiki biznesowej i skryptów](./skrypty_sql/)
 </p>
 </details>
+
 
 <div id="6-programy"></div>
 <details>
