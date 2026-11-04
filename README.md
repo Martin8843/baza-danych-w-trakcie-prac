@@ -278,7 +278,7 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   <br>
   
   2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql) <br><br>
-  Samodzielnie (autonomicznie) rejestruje zdarzenia systemowe, błędy i wyjątki w dedykowanej tabeli logów, zapisując typ zdarzenia oraz szczegółowy komunikat.
+  Jest to procedura autonomiczna (PRAGMA_AUTONOMY), która rejestruje zdarzenia systemowe, błędy i wyjątki w dedykowanej tabeli logów, zapisując typ zdarzenia oraz szczegółowy komunikat.
   <br>
   <br>
   
