@@ -294,7 +294,7 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL.<br><br>*W pliku 
   4. `p_aktualizuj_ceny_produktow` [(Zobacz kod)](./skrypty_sql/p_aktualizuj_ceny_produktow.sql) <br><br>
   To procedura służąca do masowej aktualizacji cen produktów przy użyciu kolekcji.<br>Zamiast modyfikować ceny pojedynczo w pętli, przekazuje całe tablice identyfikatorów oraz odpowiadających
   im nowych cen w jednej operacji wsadowej.<br>Kluczowe znaczenie ma tutaj operator *FORALL*, który zapewnia maksymalną wydajność bazy danych.<br>
-  Procedura przeprowadza walidacje: 
+  Procedura przeprowadza walidacje: <br>
   * Sprawdza, czy obie tablice mają dokładnie taki sam rozmiar (tyle samo ID, co nowych cen).  <br>
   * Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
   * Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale nie przerywa działania  <br>
