@@ -272,7 +272,7 @@ ALTER TABLE stan_magazynu
 
 W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
-**wIDOKI**
+**WIDOKI**
 
   1. `v_produkty_z_magazynu` [(Zobacz kod)](./skrypty_sql/v_produkty_z_magazynu.sql) <br><br>
   Widok agregujący dane asortymentowe wraz z bieżącymi stanami magazynowymi dla poszczególnych produktów. <br>
