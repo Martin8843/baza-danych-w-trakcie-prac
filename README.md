@@ -221,10 +221,17 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 
 <div id="5-implementacja-logiki-biznesowej"></div>
 <details>
-<summary><b>5. Implementacja logiki biznesowej w warstwie bazy danych</b></summary>
+<summary><b>5. Implementacja logiki biznesowej w warstwie bazy danych (programy PL/SQL)</b></summary>
 <br>
 
-W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. Oto najważniejsze z nich, które zostały wdrożone na tym etapie:
+
+W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. Oto najważniejsze z nich, które zostały wdrożone na tym etapie.
+
+🛠️ Dane testowe
+Aby ułatwić testowanie mechanizmów bazy danych, przygotowałem dedykowany zestaw danych testowych.
+
+👉 [Dane testowe](./skrypty_sql/apteka_dane_testowe.ddl)
+
 
 <b>1. Więzy integralności (Constraints & CHECK)</b>
 - <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
@@ -252,31 +259,25 @@ ALTER TABLE logi_systemowe
     NOT DEFERRABLE 
 ;
 ```
-
 <br>
 
-## 2. Logika proceduralna (PL/SQL)
-- **Wyzwalacze (Triggers):** Automatyczna aktualizacja stanów magazynowych (`stan_magazynu`) po złożeniu zamówienia oraz rejestracja zdarzeń w tabeli `logi_systemowe`.
-- **Procedury i Funkcje:** Bezpieczna obsługa transakcji (składanie zamówienia z walidacją dostępności) oraz wyliczanie wartości zamówień.
+<br>2. Logika proceduralna (PL/SQL)<br>
+
+W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql znajdują się szczegółowe komentarze z opisem działania kodu*
+
+- **Procedury**
+  1. 
+
+- Bezpieczna obsługa transakcji (składanie zamówienia z walidacją dostępności) oraz wyliczanie wartości zamówień.
 - **Widoki (Views):** Uproszczone zestawienia analityczne (np. najczęściej zamawiane produkty).
 
-👉 [Kliknij tutaj, aby przejrzeć kod logiki biznesowej i skryptów](./skrypty_sql/)
-</p>
+
+
+- **Wyzwalacze (Triggers):** Automatyczna aktualizacja stanów magazynowych (`stan_magazynu`) po złożeniu zamówienia oraz rejestracja zdarzeń w tabeli `logi_systemowe`.
+
 </details>
 
 
-<div id="6-programy"></div>
-<details>
-<summary><font color="#4dabf7"><b> 6. Funkcje, procedury, wyzwalacze</b></font></summary>
-  
-<br>
-
-
-<br>
-<br>
-<br>
-<br>
-</details>
 
 <div id="7-rozwiazania"></div>
 <details>
