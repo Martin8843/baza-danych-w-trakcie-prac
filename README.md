@@ -225,6 +225,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 <br>
   
 **Dane testowe**
+
 Aby ułatwić testowanie mechanizmów bazy danych, przygotowałem dedykowany zestaw danych testowych.
 
 👉 [Dane testowe](./skrypty_sql/apteka_dane_testowe.sql)
