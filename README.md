@@ -282,9 +282,12 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   <br>
   <br>
   
-  3. `` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql) <br><br>
-
+  3. `p_usun_produkt` [(Zobacz kod)](./skrypty_sql/p_usun_produkt.sql) <br><br>
+  Procedura uniemożliwia skasowanie produkt, który znajduje się na stanie magazynowym lub w historii zamówień. W razie próby naruszenia tych zasad, automatycznie blokuje operację i zapisuje      szczegółowy błąd w dzienniku logów.
   <br>
+    <p align="center">
+  <img src="/dokumentacja/tabela_logow.png" alt="Diagram ERD" width="650">
+  </p>
   <br>
   <br>
 
