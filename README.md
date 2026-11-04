@@ -271,9 +271,10 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
 
 - **Procedury**
   1. `p_dodaj_produkt` [(Zobacz kod w repozytorium)](./skrypty_sql/apteka_dane_testowe.sql)
-
-      **Co robi?**
-      Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę `p_logowanie_zdarzeń`)
+  <br>
+  Opis:
+  <br>
+  Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę `p_logowanie_zdarzeń`)
   2. 
   
 
