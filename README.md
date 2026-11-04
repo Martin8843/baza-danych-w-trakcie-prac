@@ -295,12 +295,14 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   To procedura służąca do masowej aktualizacji cen produktów przy użyciu kolekcji. Zamiast modyfikować ceny pojedynczo w pętli, przekazuje całe tablice identyfikatorów oraz odpowiadających im    nowych cen w jednej operacji wsadowej. Kluczowe znaczenie ma tutaj operator *FORALL*, który zapewnia maksymalną wydajność bazy danych.
   <br>
   Procedura przeprowadza walidacje:  <br>
-  -Sprawdza, czy ID produktów nie zaczynają się od cyfry 0.  <br>
-  -Sprawdza, czy obie tablice mają dokładnie taki sam rozmiar (tyle samo ID, co nowych cen).  <br>
-  -Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
-  -Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale  nie przerywa działania  <br>
+  Sprawdza, czy obie tablice mają dokładnie taki sam rozmiar (tyle samo ID, co nowych cen).  <br>
+  Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
+  Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale nie przerywa działania  <br>
   <br>
-
+  <br>
+    <p align="center">
+  <img src="/dokumentacja/tabela_logow_brak_id.png" alt="Diagram ERD" width="650">
+  </p>
 
 </details>
 
