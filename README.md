@@ -277,17 +277,13 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql zna
   <br>
   <br>
   
-  2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql)
-  <br>
-  Opis: <br>
+  2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql) <br><br>
   Samodzielnie (autonomicznie) rejestruje zdarzenia systemowe, błędy i wyjątki w dedykowanej tabeli logów, zapisując typ zdarzenia oraz szczegółowy komunikat.
   <br>
   <br>
-  <br>
-  3. `` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql)
-  <br>
-  Opis: <br>
   
+  3. `` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql) <br><br>
+
   <br>
   <br>
   <br>
