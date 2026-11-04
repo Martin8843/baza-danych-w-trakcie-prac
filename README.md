@@ -299,8 +299,6 @@ W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL.<br><br>*W pliku 
   * Sprawdza, czy żadna z przekazanych cen nie jest ujemna.  <br>
   * Sprawdza w pętli, które z podanych produktów w ogóle istnieją w bazie – jeśli jakichś brakuje loguje błąd, ale nie przerywa działania  <br>
   <br>
-  <br>
-  
   Obsługa wyjątków i autonomiczne logowanie błędów w procedurze masowej aktualizacji cen.
     <p align="center">
   <img src="/dokumentacja/tabela_logow_brak_id.png" alt="Diagram ERD" width="650">
