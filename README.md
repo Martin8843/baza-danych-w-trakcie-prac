@@ -267,13 +267,15 @@ ALTER TABLE logi_systemowe
 
 <br>2. Logika proceduralna (PL/SQL)<br>
 
-W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql znajdują się szczegółowe komentarze z opisem działania kodu*
+W projekcie zaimplementowano kilka dedykowanych obiekty PL/SQL. *W pliku sql znajdują się szczegółowe komentarze z opisem działania kodu*  <br>
 
-- **Procedury**
+**Procedury**
+
   1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql)
   <br>
   Opis: <br>
   Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę `p_logowanie_zdarzeń`) <br>
+  
   2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql)
   
 
