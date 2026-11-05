@@ -30,6 +30,8 @@ Głównym celem projektu było zaprojektowanie i wdrożenie relacyjnej bazy dany
 W ramach architektury kluczowa logika biznesowa została przeniesiona bezpośrednio do warstwy bazy danych Oracle (PL/SQL), co pozwoliło zrealizować następujące założenia:<br>
 
 <b>1. Stworzenie mechanizmu, który na bieżąco analizuje stany magazynowe i automatycznie synchronizuje statusy produktów.</b><br>
+<b>1. Stworzenie mechanizmu, który na bieżąco analizuje stany magazynowe i automatycznie synchronizuje statusy produktów.</b><br>
+
 
 </p>
 <br>
