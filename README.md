@@ -7,6 +7,9 @@
 ![Oracle Data Modeler](https://img.shields.io/badge/Data_Modeler-1B5E20?style=flat-square&logo=oracle&logoColor=white)
 
 <br>
+ Cześć!,
+
+ dziękuję że odwiedzasz moje repozytorium! Zapraszam cię do zapoznania się z moim projektem. <br>
 
 *Autorski projekt bazy danych SQL apteki oparty na silniku Oracle.*
 <br>
