@@ -8,8 +8,10 @@
 
 <br>
 Autorski projekt relacyjnej bazy danych apteki, obejmujący pełne modelowanie ERD do normalizacji tabel 3NF, skrypty DDL/DML oraz logikę napisaną w PL/SQL* 
+<br>
+<br>
 
-*Stworzony z myślą o dalszej rozbudowie*
+(*Stworzony z myślą o dalszej rozbudowie*)
 <br>
 
 ---
