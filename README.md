@@ -296,7 +296,7 @@ ALTER TABLE stan_magazynu
 ```
 <br>
 
-<b>2. Logika biznesowa i implementacja (m.in. PL/SQL)</b>
+<b>2. Widoki i programy PL/SQL</b>
 
 W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
