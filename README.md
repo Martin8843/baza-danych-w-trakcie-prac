@@ -299,7 +299,7 @@ ALTER TABLE stan_magazynu
 <br>
 </details>
 
-<summary><b>5.2. Widoki i programy PL/SQL</b></summary>
+<b>5.2. Widoki i programy PL/SQL</b></summary>
 <br>
 
 W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
