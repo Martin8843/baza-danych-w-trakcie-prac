@@ -36,6 +36,8 @@
 <a href="./skrypty_sql/wyzwalacze"><img src="https://img.shields.io/badge/WYZWALACZE-%F0%9F%94%91-e0f2fe?style=for-the-badge&logoColor=0369a1&color=bae6fd" height="38" alt="Procedury"></a>
 
 </div>
+
+</div>
 <br>
 
 ### 📚 Spis treści
