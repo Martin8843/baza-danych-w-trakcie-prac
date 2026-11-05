@@ -21,7 +21,7 @@
 Szybki nawigator po projekcie
 
 <!-- Przyciski Szybkiego Dostępu w pastelowej palecie -->
-[![Schemat ERD](https://img.shields.io/badge/Diagram ERD-%F0%9F%93%8A-e8f4f8?style=for-the-badge&logoColor=2c3e50&color=d1ecf1)](./dokumentacja/diagram_erd.png)
+[![Schemat ERD](https://img.shields.io/badge/Diagram_ERD-%F0%9F%93%8A-e8f4f8?style=for-the-badge&logoColor=2c3e50&color=d1ecf1)](./dokumentacja/diagram_erd.png)
 [![Procedury](https://img.shields.io/badge/Procedury-%F0%9F%93%81-e2f0d9?style=for-the-badge&logoColor=2c3e50&color=d4edda)](./skrypty_sql/procedury)
 [![Wyzwalacze](https://img.shields.io/badge/Wyzwalacze-%F0%9F%94%91-fff3cd?style=for-the-badge&logoColor=2c3e50&color=ffeeba)](./skrypty_sql/wyzwalacze)
 <br>
