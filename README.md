@@ -28,7 +28,7 @@
 <p>
 Głównym celem projektu było zaprojektowanie i wdrożenie relacyjnej bazy danych dla apteki.<br>
 W ramach architektury kluczowa logika biznesowa została przeniesiona bezpośrednio do warstwy bazy danych Oracle (PL/SQL), co pozwoliło zrealizować następujące założenia:
-<summary><b>1. Stworzenie mechanizmu, który na bieżąco analizuje stany magazynowe i automatycznie synchronizuje statusy produktów.</b><br>
+<b>1. Stworzenie mechanizmu, który na bieżąco analizuje stany magazynowe i automatycznie synchronizuje statusy produktów.</b><br>
 
 </p>
 <br>
