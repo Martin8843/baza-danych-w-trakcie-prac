@@ -349,13 +349,14 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
    1. `trg_po_aktualizacji_stan_magazyn` [(Zobacz kod)](./skrypty_sql/trg_po_aktualizacji_stan_magazyn.sql) <br><br>
   Zadaniem wyzwalacza jest aktualizująca statusu dostępności produktu w tabeli produkukty zaraz po każdej zmianie jego ilości w magazynie (dla każdego zmienianego wiersza).
   Przypisuje odpowiedni status:
-  * **Dostępny przy ilości** > 100
-  * **Niedostępny* = 0
-  * **Mała ilość* - dla pozostałych wartości
+  * **Dostępny** przy ilości > 100
+  * **Niedostępny** = 0
+  * **Mała ilość** - dla pozostałych wartości
   <br>
-  Zmiana statusu w tabeli produkty  <br>
+  Zmiana statusu w tabeli produkty
+  <br>
   <p align="center">
-  <img src="/dokumentacja/tabela_logow_dml.png" alt="Diagram ERD" width="650">
+  <img src="/dokumentacja/tabela_produkty_status_dost.png" alt="Diagram ERD" width="650">
   </p>
   <br>
   <br>
