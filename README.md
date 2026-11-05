@@ -295,6 +295,7 @@ ALTER TABLE stan_magazynu
 
 ```
 <br>
+</details>
 
 <b>2. Widoki i programy PL/SQL</b>
 
