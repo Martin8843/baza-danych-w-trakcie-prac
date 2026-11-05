@@ -265,8 +265,8 @@ Aby ułatwić testowanie mechanizmów bazy danych, przygotowałem dedykowany zes
 W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. Oto najważniejsze z nich, które zostały wdrożone na tym etapie.
 
 
-
-<b> 1. Więzy integralności (Constraints & CHECK)</b>
+<details>
+<summary><b>1. Więzy integralności (Constraints & CHECK)</b></summary>
 
 - <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
 - <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności  z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
