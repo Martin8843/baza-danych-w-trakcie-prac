@@ -249,8 +249,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 </details>
 
 <div id="5-implementacja-logiki-biznesowej"></div>
-<details>
-<summary><b>5. Kluczowe funkcjonalności i implementacja PL/SQL</b></summary>
+<b>5. Kluczowe funkcjonalności i implementacja PL/SQL</b></summary>
 <br>
   
 ### DANE TESTOWE
@@ -265,8 +264,7 @@ Aby ułatwić testowanie mechanizmów bazy danych, przygotowałem dedykowany zes
 W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. Oto najważniejsze z nich, które zostały wdrożone na tym etapie.
 
 
-<details>
-<summary><b>5.1. Więzy integralności (Constraints & CHECK)</b></summary>
+<b>5.1. Więzy integralności (Constraints & CHECK)</b>
 <br>
 <br>
 
@@ -297,7 +295,6 @@ ALTER TABLE stan_magazynu
 
 ```
 <br>
-</details>
 
 <b>5.2. Widoki i programy PL/SQL</b></summary>
 <br>
