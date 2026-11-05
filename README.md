@@ -48,10 +48,11 @@
 Zaprojektowanie i wdrożenie relacyjnej bazy danych dla apteki.<br>
 W ramach architektury kluczowa logika biznesowa została przeniesiona bezpośrednio do warstwy bazy danych Oracle (PL/SQL), co pozwoliło zrealizować następujące założenia:<br>
 
-<b>1. Zestaw dedykowanych widoków SQL ułatwiających pracownikom szybki wgląd w kluczowe dane magazynowe i sprzedażowe.</b><br><br>
-<b>2. Procedury PL/SQL do bezpiecznego dodawania i usuwania produktów oraz aktualizacji cen, połączone z automatycznym logowaniem zmian.</b><br><br>
-<b>3. System audytu: Dedykowana tabela logów oraz procedury rejestrujące kluczowe operacje i zmiany w systemie.</b><br><br>
-<b>4. Wyzwalacz: Mechanizm dynamicznie analizujący stany magazynowe i aktualizujący status dostępności produktów w czasie rzeczywistym. </b><br><br>
+<p>
+<b>1. <a href="#widoki">Zestaw dedykowanych widoków SQL dla personelu.</a></b><br><br>
+<b>2. <a href="#procedury">Procedury PL/SQL do bezpiecznego dodawania i usuwania produktów.</a></b><br><br>
+<b>3. <a href="#logi">System audytu: Dedykowana tabela logów oraz procedura logująca zmiany.</a></b><br><br>
+<b>4. <a href="#wyzwalacze">Wyzwalacz, który uruchamia mechanizm aktualizacji statusu dostępności produktów w czasie rzeczywistym.</a></b><br><br>
 </p>
 
 <br>
@@ -363,7 +364,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   <img src="/dokumentacja/tabela_logow_brak_id.png" alt="Diagram ERD" width="650">
   </p>
   
-  **WYZWALACZE**
+   <h3 id="wyzwalacze">WYZWALACZE</h3>
 
   1. `trg_po_zmianach_produkty` [(Zobacz kod)](./skrypty_sql/wyzwalacze/trg_po_zmianach_produkty.sql) <br><br>
   To klasyczny wyzwalacz rejestrujący historie zmian (audit trail). Trigger uruchamia się po każdej operacji INSERT, UPDATE lub DELETE dla każdego zmienianego wiersza.
