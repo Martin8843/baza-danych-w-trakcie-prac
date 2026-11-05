@@ -25,7 +25,6 @@
 ### Szybki nawigator po projekcie:
 
 <br>
-
 <div align="center">
 
 <a href="./dokumentacja/diagram_erd.png"><img src="https://img.shields.io/badge/DIAGRAM%20ERD-%F0%9F%93%8A-b7e4c7?style=for-the-badge&logoColor=1b4332&color=d4edda" height="38" alt="Diagram ERD"></a>
