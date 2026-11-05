@@ -31,7 +31,7 @@ W ramach architektury kluczowa logika biznesowa została przeniesiona bezpośred
 
 <b>1. Zestaw dedykowanych widoków SQL ułatwiających pracownikom szybki wgląd w kluczowe dane magazynowe i sprzedażowe.</b><br><br>
 <b>2. Procedury PL/SQL do bezpiecznego dodawania i usuwania produktów oraz aktualizacji cen, połączone z automatycznym logowaniem zmian.</b><br><br>
-<b>3. System audytu: Dedykowane tabele logów oraz procedury rejestrujące kluczowe operacje i zmiany w systemie.</b><br><br>
+<b>3. System audytu: Dedykowana tabela logów oraz procedury rejestrujące kluczowe operacje i zmiany w systemie.</b><br><br>
 <b>4. Wyzwalacz: Mechanizm dynamicznie analizujący stany magazynowe i aktualizujący status dostępności produktów w czasie rzeczywistym. </b><br><br>
 </p>
 
