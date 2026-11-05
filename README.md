@@ -297,7 +297,8 @@ ALTER TABLE stan_magazynu
 <br>
 </details>
 
-<b>2. Widoki i programy PL/SQL</b>
+<details>
+<summary><b>2. Widoki i programy PL/SQL</b></summary>
 
 W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
@@ -387,6 +388,6 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   </p>
   <br>
   <br>
-  
 </details>
+  
 
