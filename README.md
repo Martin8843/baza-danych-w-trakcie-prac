@@ -23,6 +23,8 @@ Szybki nawigator po projekcie
 [![Schemat ERD](https://img.shields.io/badge/Szybki_Podgląd-Schemat_ERD-blue?style=for-the-badge&logo=oracle)](#4-projektowanie-i-architektura-bazy-danych-model-logiczny)
 [![Trigger Statusów](https://img.shields.io/badge/Szybki_Podgląd-Trigger_Statusów-orange?style=for-the-badge&logo=oracle)](#5-kluczowe-funkcjonalności-i-implementacja-plsql)
 [![System Audytu](https://img.shields.io/badge/Szybki_Podgląd-System_Audytu-purple?style=for-the-badge&logo=oracle)](#5-kluczowe-funkcjonalności-i-implementacja-plsql)
+<br>
+<br>
 
 ### 📚 Spis treści
 <div id="1-Cel projektu"></div>
