@@ -23,6 +23,8 @@
 ---
 
 <b>Szybki nawigator po projekcie</b></summary>
+<br>
+
 
 <div align="center">
 
