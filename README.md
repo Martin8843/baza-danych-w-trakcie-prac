@@ -8,7 +8,7 @@
 
 <br>
 
-*Autorski projekt relacyjnej bazy danych apteki oparty na silniku Oracle.*
+*Autorski projekt bazy danych SQL apteki oparty na silniku Oracle.*
 <br>
 *Obejmujący  modelowanie ERD do normalizacji tabel 3NF, skrypty DDL/DML oraz logikę napisaną w PL/SQL*
 <br>
@@ -20,9 +20,10 @@
 ---
 Szybki nawigator po projekcie
 
-[![Schemat ERD](https://img.shields.io/badge/Szybki_Podgląd-Schemat_ERD-blue?style=for-the-badge&logo=oracle)](#4-projektowanie-i-architektura-bazy-danych-model-logiczny)
-[![Trigger Statusów](https://img.shields.io/badge/Szybki_Podgląd-Trigger_Statusów-orange?style=for-the-badge&logo=oracle)](#5-kluczowe-funkcjonalności-i-implementacja-plsql)
-[![System Audytu](https://img.shields.io/badge/Szybki_Podgląd-System_Audytu-purple?style=for-the-badge&logo=oracle)](#5-kluczowe-funkcjonalności-i-implementacja-plsql)
+<!-- Przyciski Szybkiego Dostępu w pastelowej palecie -->
+[![Schemat ERD](https://img.shields.io/badge/Schemat_ERD-%F0%9F%93%8A-e8f4f8?style=for-the-badge&logoColor=2c3e50&color=d1ecf1)](./dokumentacja/diagram_erd.png)
+[![Procedury](https://img.shields.io/badge/Katalog_Procedur-%F0%9F%93%81-e2f0d9?style=for-the-badge&logoColor=2c3e50&color=d4edda)](./procedury)
+[![Wyzwalacze](https://img.shields.io/badge/Katalog_Wyzwalaczy-%F0%9F%94%91-fff3cd?style=for-the-badge&logoColor=2c3e50&color=ffeeba)](./wyzwalacze)
 <br>
 <br>
 
