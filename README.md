@@ -27,13 +27,13 @@
 <br>
 <div align="center">
 
-<a href="./dokumentacja/diagram_erd.png"><img src="https://img.shields.io/badge/📊%20DIAGRAM%20ERD-b7e4c7?style=for-the-badge&logoColor=1b4332" height="38" alt="Diagram ERD"></a>
+<a href="./dokumentacja/diagram_erd.png"><img src="https://img.shields.io/badge/📊%20DIAGRAM%20ERD-2ea44f?style=for-the-badge&logoColor=white" height="38" alt="Diagram ERD"></a>
 &nbsp;&nbsp;&nbsp;
-<a href="./skrypty_sql/apteka_schemat.ddl"><img src="https://img.shields.io/badge/🗂️%20SCHEMAT%20BAZY%20DANYCH-e2d9f3?style=for-the-badge&logoColor=4a154b" height="38" alt="Schemat Bazy Danych"></a>
+<a href="./skrypty_sql/apteka_schemat.ddl"><img src="https://img.shields.io/badge/🗂️%20SCHEMAT%20BAZY%20DANYCH-8957e5?style=for-the-badge&logoColor=white" height="38" alt="Schemat Bazy Danych"></a>
 &nbsp;&nbsp;&nbsp;
-<a href="./skrypty_sql/procedury"><img src="https://img.shields.io/badge/📂%20PROCEDURY-fed7aa?style=for-the-badge&logoColor=9a3412" height="38" alt="Procedury"></a>
+<a href="./skrypty_sql/procedury"><img src="https://img.shields.io/badge/📂%20PROCEDURY-d97706?style=for-the-badge&logoColor=white" height="38" alt="Procedury"></a>
 &nbsp;&nbsp;&nbsp;
-<a href="./skrypty_sql/wyzwalacze"><img src="https://img.shields.io/badge/🔑%20WYZWALACZE-bae6fd?style=for-the-badge&logoColor=0369a1" height="38" alt="Wyzwalacze"></a>
+<a href="./skrypty_sql/wyzwalacze"><img src="https://img.shields.io/badge/🔑%20WYZWALACZE-0969da?style=for-the-badge&logoColor=white" height="38" alt="Wyzwalacze"></a>
 
 </div>
 <br>
