@@ -21,10 +21,7 @@
 Szybki nawigator po projekcie
 
 <!-- Przyciski Szybkiego Dostępu w pastelowej palecie -->
-[![Schemat ERD](https://img.shields.io/badge/Diagram_ERD-%F0%9F%93%8A-e8f4f8?style=for-the-badge&logoColor=2c3e50&color=d1ecf1)](./dokumentacja/diagram_erd.png)
-[![Procedury](https://img.shields.io/badge/Procedury-%F0%9F%93%81-e2f0d9?style=for-the-badge&logoColor=2c3e50&color=d4edda)](./skrypty_sql/procedury)
-[![Wyzwalacze](https://img.shields.io/badge/Wyzwalacze-%F0%9F%94%91-fff3cd?style=for-the-badge&logoColor=2c3e50&color=ffeeba)](./skrypty_sql/wyzwalacze)
-<br>
+[![Diagram ERD](https://img.shields.io/badge/%20%20Diagram_ERD%20%20-%F0%9F%93%8A-b7e4c7?style=for-the-badge&logoColor=1b4332&color=d4edda)](./dokumentacja/diagram_erd.png) [![Procedury](https://img.shields.io/badge/%20%20Procedury%20%20-%F0%9F%93%81-b8daff?style=for-the-badge&logoColor=004085&color=cce5ff)](./skrypty_sql/procedury) [![Wyzwalacze](https://img.shields.io/badge/%20%20Wyzwalacze%20%20-%F0%9F%94%91-bae6fd?style=for-the-badge&logoColor=0369a1&color=e0f2fe)](./skrypty_sql/wyzwalacze)
 <br>
 
 ### 📚 Spis treści
