@@ -266,7 +266,9 @@ W warstwie bazy danych zastosowano zróżnicowane mechanizmy ochrony i logiki. O
 
 
 <details>
-<summary><b>1. Więzy integralności (Constraints & CHECK)</b></summary>
+<summary><b>5.1. Więzy integralności (Constraints & CHECK)</b></summary>
+<br>
+<br>
 
 - <b>Ograniczenia wartości (<code>CHECK</code>):</b> Weryfikacja dodatnich ilości produktów, cen oraz dopuszczalnych statusów zamówień bezpośrednio w tabelach.
 - <b>Klucze i relacje (<code>PRIMARY KEY</code>, <code>FOREIGN KEY</code>):</b> Gwarancja unikalności rekordów i spójności  z regułami usuwania (np. <code>ON DELETE CASCADE</code> lub <code>SET NULL</code>).
@@ -298,7 +300,8 @@ ALTER TABLE stan_magazynu
 </details>
 
 <details>
-<summary><b>2. Widoki i programy PL/SQL</b></summary>
+<summary><b>5.2. Widoki i programy PL/SQL</b></summary>
+<br>
 
 W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sql znajdują się komentarze z opisem działania kodu*  <br>
 
