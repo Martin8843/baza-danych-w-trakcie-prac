@@ -26,12 +26,13 @@
 <br>
 
 <p>
-Głównym celem projektu było zaprojektowanie i wdrożenie relacyjnej bazy danych dla apteki.<br>
+Zaprojektowanie i wdrożenie relacyjnej bazy danych dla apteki.<br>
 W ramach architektury kluczowa logika biznesowa została przeniesiona bezpośrednio do warstwy bazy danych Oracle (PL/SQL), co pozwoliło zrealizować następujące założenia:<br>
 
-<b>1. Stworzenie mechanizmu, który na bieżąco analizuje stany magazynowe i automatycznie synchronizuje statusy produktów.</b><br>
-<b>1. Stworzenie mechanizmu, który na bieżąco analizuje stany magazynowe i automatycznie synchronizuje statusy produktów.</b><br>
-
+<b>1. Widoki raportowe: Zestaw (kilku) dedykowanych widoków SQL ułatwiających pracownikom szybki wgląd w kluczowe dane magazynowe i sprzedażowe.</b><br>
+<b>2. Procedury PL/SQL do bezpiecznego dodawania i usuwania produktów oraz aktualizacji cen, połączone z automatycznym logowaniem zmian.</b><br>
+<b>3. System audytu: Dedykowane tabele logów oraz procedury rejestrujące kluczowe operacje i zmiany w systemie.</b><br>
+<b>4. Wyzwalacz: Mechanizm dynamicznie analizujący stany magazynowe i aktualizujący status dostępności produktów w czasie rzeczywistym. </b><br>
 
 </p>
 <br>
