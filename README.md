@@ -22,7 +22,7 @@
 
 ---
 
-<summary><b>Szybki nawigator po projekcie</b></summary>
+<b>Szybki nawigator po projekcie</b></summary>
 
 <div align="center">
 
