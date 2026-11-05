@@ -21,7 +21,8 @@
 <br>
 
 ---
-Szybki nawigator po projekcie
+
+<summary><b>Szybki nawigator po projekcie</b></summary>
 
 <div align="center">
 
