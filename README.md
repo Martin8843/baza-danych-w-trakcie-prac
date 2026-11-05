@@ -319,17 +319,17 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
 
 **PROCEDURY**
 
-  1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/p_dodaj_produkt.sql) <br><br>
+  1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/procedury/p_dodaj_produkt.sql) <br><br>
   Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę **p_logowanie_zdarzeń**) <br>
   <br>
   <br>
   
-  2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/p_logowanie_zdarzen.sql) <br><br>
+  2. `p_logowanie_zdarzen` [(Zobacz kod)](./skrypty_sql/procedury/p_logowanie_zdarzen.sql) <br><br>
   Jest to procedura autonomiczna (PRAGMA AUTONOMOUS_TRANSACTION), która rejestruje zdarzenia systemowe, błędy i wyjątki w dedykowanej tabeli logów, zapisując typ zdarzenia oraz szczegółowy       komunikat.
   <br>
   <br>
   
-  3. `p_usun_produkt` [(Zobacz kod)](./skrypty_sql/p_usun_produkt.sql) <br><br>
+  3. `p_usun_produkt` [(Zobacz kod)](./skrypty_sql/procedury/p_usun_produkt.sql) <br><br>
   Procedura uniemożliwia skasowanie produkt, który znajduje się na stanie magazynowym lub w historii zamówień.<br>W razie próby naruszenia tych zasad, automatycznie blokuje operację i zapisuje   szczegółowy błąd w dzienniku logów.
   <br>
     <p align="center">
@@ -338,7 +338,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   <br>
   <br>
 
-  4. `p_aktualizuj_ceny_produktow` [(Zobacz kod)](./skrypty_sql/p_aktualizuj_ceny_produktow.sql) <br><br>
+  4. `p_aktualizuj_ceny_produktow` [(Zobacz kod)](./skrypty_sql/procedury/p_aktualizuj_ceny_produktow.sql) <br><br>
   To procedura służąca do masowej aktualizacji cen produktów przy użyciu kolekcji.<br>Zamiast modyfikować ceny pojedynczo w pętli, przekazuje całe tablice identyfikatorów oraz odpowiadających
   im nowych cen w jednej operacji wsadowej.<br>Kluczowe znaczenie ma tutaj operator *FORALL*, który zapewnia maksymalną wydajność bazy danych.<br><br>
   Procedura przeprowadza walidacje: 
@@ -353,7 +353,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   
   **WYZWALACZE**
 
-  1. `trg_po_zmianach_produkty` [(Zobacz kod)](./skrypty_sql/trg_po_zmianach_produkty.sql) <br><br>
+  1. `trg_po_zmianach_produkty` [(Zobacz kod)](./skrypty_sql/wyzwalacze/trg_po_zmianach_produkty.sql) <br><br>
   To klasyczny wyzwalacz rejestrujący historie zmian (audit trail). Trigger uruchamia się po każdej operacji INSERT, UPDATE lub DELETE dla każdego zmienianego wiersza.
   Jego zadaniem jest rozpoznanie typu operacji, pobranie odpowiedniego ID oraz przekazanie tych danych do autonomicznej procedury logującej, która zapisuje historię w tabeli `logi_systemowe`
   <br>
@@ -364,7 +364,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   <br>
   <br>
 
-   1. `trg_po_aktualizacji_stan_magazyn` [(Zobacz kod)](./skrypty_sql/trg_po_aktualizacji_stan_magazyn.sql) <br><br>
+   2. `trg_po_aktualizacji_stan_magazyn` [(Zobacz kod)](./skrypty_sql/wyzwalacze/trg_po_aktualizacji_stan_magazyn.sql) <br><br>
   Zadaniem wyzwalacza jest aktualizująca statusu dostępności produktu w tabeli produkukty zaraz po każdej zmianie jego ilości w magazynie (dla każdego zmienianego wiersza).
   Przypisuje odpowiedni status:
   * **Dostępny** przy ilości > 100
