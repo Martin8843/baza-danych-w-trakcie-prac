@@ -30,7 +30,7 @@
 
 <a href="./dokumentacja/diagram_erd.png"><img src="https://img.shields.io/badge/DIAGRAM%20ERD-%F0%9F%93%8A-b7e4c7?style=for-the-badge&logoColor=1b4332&color=d4edda" height="38" alt="Diagram ERD"></a>
 &nbsp;&nbsp;&nbsp;
-<a href="./skrypty_sql/schemat_apteka.ddl"><img src="https://img.shields.io/badge/SCHEMAT%20BAZY-%F0%9F%93%8A-b7e4c7?style=for-the-badge&logoColor=1b6332&color=d4edda" height="38" alt="Schemat Bazy Danych"></a>
+<a href="./skrypty_sql/apteka_schemat.ddl"><img src="https://img.shields.io/badge/SCHEMAT%20BAZY%20DANYCH-%F0%9F%93%8A-b7e4c7?style=for-the-badge&logoColor=1b6332&color=d4edda" height="38" alt="Schemat Bazy Danych"></a>
 &nbsp;&nbsp;&nbsp;
 <a href="./skrypty_sql/procedury"><img src="https://img.shields.io/badge/PROCEDURY-%F0%9F%93%81-b8daff?style=for-the-badge&logoColor=004085&color=cce5ff" height="38" alt="Procedury"></a>
 &nbsp;&nbsp;&nbsp;
