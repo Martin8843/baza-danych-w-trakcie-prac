@@ -326,7 +326,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   </p>
 
 
-**PROCEDURY**
+  <h3 id="logi">PROCEDURY</h3>
 
   1. `p_dodaj_produkt` [(Zobacz kod)](./skrypty_sql/procedury/p_dodaj_produkt.sql) <br><br>
   Weryfikuje poprawność danych nowego produktu (m.in. kategorię, datę ważności, receptę i cenę), bezpiecznie zapisuje go w tabeli asortymentu, a wszelkie napotkane błędy i wyjątki                automatycznie rejestruje w tabeli logów systemowych (uruchamia procedurę **p_logowanie_zdarzeń**) <br>
