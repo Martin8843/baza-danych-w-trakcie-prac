@@ -226,7 +226,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 
 <div id="5-implementacja-logiki-biznesowej"></div>
 <details>
-<summary><b>5. Implementacja logiki biznesowej w warstwie bazy danych (programy PL/SQL)</b></summary>
+<summary><b>5. Kluczowe funkcjonalności i implementacja PL/SQL</b></summary>
 <br>
   
 ### DANE TESTOWE
