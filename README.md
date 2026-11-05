@@ -357,7 +357,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   To klasyczny wyzwalacz rejestrujący historie zmian (audit trail). Trigger uruchamia się po każdej operacji INSERT, UPDATE lub DELETE dla każdego zmienianego wiersza.
   Jego zadaniem jest rozpoznanie typu operacji, pobranie odpowiedniego ID oraz przekazanie tych danych do autonomicznej procedury logującej, która zapisuje historię w tabeli `logi_systemowe`
   <br>
-  Zapis w tabeli logów  <br>
+    Zapis w tabeli logów  <br>
   <p align="center">
   <img src="/dokumentacja/tabela_logow_dml.png" alt="Diagram ERD" width="650">
   </p>
@@ -371,7 +371,7 @@ W projekcie zaimplementowano kilka mechanizmów bazodanowych.<br><br>*W pliku sq
   * **Niedostępny** = 0
   * **Mała ilość** - dla pozostałych wartości
   <br>
-  Zmiana statusu w tabeli produkty
+    Zmiana statusu w tabeli produkty
   <br>
   <p align="center">
   <img src="/dokumentacja/tabela_produkty_status_dost.png" alt="Diagram ERD" width="650">
