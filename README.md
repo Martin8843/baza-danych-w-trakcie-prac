@@ -165,7 +165,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
 * **`stan_magazynu`** – Reprezentuje bieżącą dostępność ilościową poszczególnych produktów.
 * **`zamowienia` oraz `szczegoly_zamowien`** – Klient składa zamówienia; każde zamówienie składa się z jednej lub wielu pozycji (produktów w określonych ilościach i cenach).
 * **`platnosci`** – Każde zamówienie powiązane jest z transakcją odnotowującą status i metodę płatności.
-* 
+  
  &nbsp;&nbsp;&nbsp;&nbsp; </details>
 
   <details>
@@ -216,12 +216,7 @@ W modelu koncepcyjnym wyodrębniono następujące powiązania między obiektami:
   Dane katalogowe leku (opis, nazwa) zmieniają się rzadko, podczas gdy stan magazynowy (liczba sztuk) ulega stałym zmianom przy sprzedaży.<br>
   Wydzielenie tej relacji odciąża główny słownik produktów i rozdziela dane statyczne od operacyjnych.
      
-     
-     
-     
-  
-
-    
+  &nbsp;&nbsp;&nbsp;&nbsp;
   </p>
   </details>
 
